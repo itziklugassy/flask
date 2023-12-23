@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block title %}login{% endblock %}
+{% block head %}
+{{ super() }}
+<style type="text/css">
+  .important {
+    color: #336699;
+  }
+</style>
+{% endblock %}
+{% block content %}
+<h1>Log in Page</h1>
+<p> login to your account</p>
+
+<body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  
+
+  user name <input type="user name">
+
+  Password: <input type="password" value="FakePSW" id="myInput"><button class="btn btn-primary" type="submit">Submit
+    form</button><br>
+  <p>Click the radio button to toggle between password visibility:</p>
+  <input type="checkbox" onclick="myFunction()">Show Password
+
+
+
+
+
+</body>
+{% endblock %}
