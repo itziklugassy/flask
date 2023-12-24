@@ -3,6 +3,3 @@
 # home page
 # about
 # contect 
-
-# flask2
-# flask2
